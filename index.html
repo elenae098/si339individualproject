@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff">
+    <link rel="resetsheet" href = "css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Album Reviews</title>
+</head>
+
+<body>
+    <div class = "navbar">
+        <a href = "index.html"> <img class = "icon" src = "images/ElkinsAlbumsLogo.png" alt = "Home: Elkin's Album Reviews"></a>
+        <a  href="#main-content" class = "main-content-link" tabindex = 1>skip to main content</a>
+        <a href="favAlbums.html" id = "favAlbums">favorite albums</a>
+        <a href="listenList.html">to-listen list</a>
+    </div>
+    <div class = "albums-container" id = "main-content">
+        <div class = "album-card" onclick="flipCard(this)">
+            <div class = "card-face front-face">
+                <img class="album-cover" src="images/ParamoreThisIsWhy.png" alt="Album cover of This is Why by Paramore">
+                <div class = "album-info">
+                    <h2>This Is Why</h2>
+                    <p>Paramore</p>
+                </div>
+                <div class = "rating-overlay">
+                    8
+                </div>
+            </div>
+            <div class = "card-face back-face">
+                <div class = "opinion">
+                    <h2>THOUGHTS</h2>
+                    <p>Pop punk done right! The first half of this album is very repetitive, but Haley Williams makes up for it with her phenomenal voice and range. The second half is infinitely better. All of the emotions in this is what makes this album so good. </p>
+                    <p>BEST SONG: Thick Skull</p>
+                    <p>WORST SONG: Running Out of Time </p>
+                </div>
+                <div>
+                    <img src="images/ThisIsWhyCD.png" alt = "" class="rounded">
+                </div>
+            </div>
+        </div>
+        <div class = "album-card" onclick="flipCard(this)">
+            <div class = "card-face front-face">
+                <img class="album-cover" src="images/BTSDarkandWild.jpg" alt="Album cover of Dark & Wild by BTS">
+                <div class = "album-info">
+                    <h2>Dark & Wild</h2>
+                    <p>BTS</p>
+                </div>
+                <div class = "rating-overlay">
+                    6 
+                </div>
+            </div>
+            <div class = "card-face back-face">
+                <div class = "opinion">
+                    <h2>THOUGHTS</h2>
+                    <p>I know that BTS was so tired after recording this album. It's the same sound over and over- it's not bad just extremely repetitive. Listening to 1 or 2 songs from the album tells you all you need to know. </p>
+                    <p>Best Song: What Am I To You</p>
+                    <p>WORST SONG: Hip Hop Phile</p>
+                </div>
+                <div>
+                    <img src="images/DarkAndWildCD.png" alt = "" class="rounded">
+                </div>
+            </div>
+        </div>
+        <div class = "album-card" onclick="flipCard(this)">
+            <div class = "card-face front-face">
+                <img class="album-cover" src="images/TravisScottUtopia.jpg" alt="Album cover of UTOPIA by Travis Scott">
+                <div class = "album-info">
+                    <h2>UTOPIA</h2>
+                    <p>Travis Scott</p>
+                </div>
+                <div class = "rating-overlay">
+                    7.5
+                </div>
+            </div>
+            <div class = "card-face back-face">
+                <div class = "opinion">
+                    <h2>THOUGHTS</h2>
+                    <p> I'm usually a fan of genre experimentation and this album was no exception. Very reminiscent of 808's & Heartbreak. The features are hit or miss: SZA, 21 Savage and James Gunn were great, but rob49 and Playboi Carti missed the mark. I wouldn't recommend the whole album, but some songs are def worth a listen.  </p>
+                    <p>Best Song: MODERN JAM</p>
+                    <p>WORST SONG: MY EYES</p>
+                </div>
+                <div>
+                    <img src="images/UtopiaCD.png" alt = "" class="rounded">
+                </div>
+            </div>
+        </div>
+        <div class = "album-card" onclick="flipCard(this)">
+            <div class = "card-face front-face">
+                <img class="album-cover" src="images/LadyGagaJoanne.jpg" alt="Album cover of Joanne by Lady Gaga">
+                <div class = "album-info">
+                    <h2>Joanne</h2>
+                    <p>Lady Gaga</p>
+                </div>
+                <div class = "rating-overlay">
+                    9
+                </div>
+            </div>
+            <div class = "card-face back-face">
+                <div class = "opinion">
+                    <h2>THOUGHTS</h2>
+                    <p>Lady Gaga, I'm so sorry for judging you too hard when I was 10 years old and you wore a meat dress. Oh my God, she can make music. I understand why she's a queen of pop now. </p>
+                    <p>BEST SONG: Angel Down</p>
+                    <p>WORST SONG: Come to Mama</p>
+                </div>
+                <div>
+                    <img src="images/JoanneCD.png" alt = "" class="rounded">
+                </div>
+            </div>
+        </div>
+        <div class = "album-card" onclick="flipCard(this)">
+            <div class = "card-face front-face">
+                <img class="album-cover" src="images/OrvillePeckPony.jpg" alt="Album cover of Pony by Orville Peck">
+                <div class = "album-info">
+                    <h2>Pony</h2>
+                    <p>Orville Peck</p>
+                </div>
+                <div class = "rating-overlay">
+                    9.5
+                </div>
+            </div>
+            <div class = "card-face back-face">
+                <div class = "opinion">
+                    <h2>THOUGHTS</h2>
+                    <p>After listening to this, never again will I say I listen to everything but country. It's nearly a perfect, skipless album. Orville Peck has done the impossible. It's not everyone's cup of tea, but everyone should give it a try nonetheless. </p>
+                    <p>Best Song: Winds Change</p>
+                    <p>WORST SONG: Take You Back</p>
+                </div>
+                <div>
+                    <img src="images/PonyCD.png" alt = "" class="rounded">
+                </div>
+            </div>
+        </div>
+        <div class = "album-card" onclick="flipCard(this)">
+            <div class = "card-face front-face">
+                <img class="album-cover" src="images/JonasBrosTheAlbum.png" alt="Album cover of The Album by Jonas Brothers">
+                <div class = "album-info">
+                    <h2>The Album</h2>
+                    <p>Jonas Brothers</p>
+                </div>
+                <div class = "rating-overlay">
+                    4
+                </div>
+            </div>
+            <div class = "card-face back-face">
+                <div class = "opinion">
+                    <h2>THOUGHTS</h2>
+                    <p>A summery album with generic lyrics about love and a department-store-esque sound. Nick and Joe's voices gave this album a few points, but the autotune gives it an ill-fitting electronic sound that's painful to hear. Catchy but painfully average. </p>
+                    <p>Best Song: Wings</p>
+                    <p>WORST SONG: Waffle House</p>
+                </div>
+                <div>
+                    <img src="images/TheAlbumCD.png" alt = "" class="rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class = "summary">Hi, I'm Elena! Welcome to my website for music. If you like my favorite albums, are interested in seeing more album reviews from someone who knows nothing about music, or want to discover something new, you may like my Spotify and/or my Instagram! Feel free to send me a DM if you have any comments! Thanks for viewing &#x1F601 </p>
+    <script>
+        function flipCard(card) {
+          card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DynaPuff">
+    <link rel="resetsheet" href = "css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Favorite Albums</title>
+</head>
+
+<body>
+    <div class = "navbar">
+        <a href = "index.html"> <img class = "icon" src = "images/ElkinsAlbumsLogo.png" alt = "Home: Elkin's Album Reviews"></a>
+        <a class = "main-content-link" href="#main-content">skip to main content</a>
+        <a href="favAlbums.html">favorite albums</a>
+        <a href="listenList.html">to-listen list</a>
+    </div>
+    <div class = "button-container">
+      <button type="button" class="filter-btn active" data-filter="all">all</button>
+      <button type="button" class="filter-btn" data-filter=".pop">pop/indie</button>
+      <button type="button" class="filter-btn" data-filter=".hiphop">hip hop</button>
+      <button type="button" class="filter-btn" data-filter=".alt">alternative</button>
+      <button type="button" class="filter-btn" data-filter=".country">country</button>
+    </div>
+
+    <div class="album-section" id = "main-content">
+      <div class = "album hiphop"> 
+        <img src="images/BeyonceLemonade.png" alt="Lemonade by Beyonce album cover art">
+        <h2>Lemonade</h2>
+        <p>Beyonce</p>
+      </div>
+      <div class = "album pop"> 
+        <img src="images/DavidBowieZiggyStardust.jpg" alt="The Rise and Fall of Ziggy Stardust by David Bowie album cover art">
+        <h2>The Rise and Fall of Ziggy Stardust</h2>
+        <p>David Bowie</p>
+      </div>
+      <div class = "album pop"> 
+        <img src="images/DeclanMckennaWDYTATC.jpg" alt="What Do You Think About the Car? by Declan Mckenna album cover art">
+        <h2>What Do You Think About the Car?</h2>
+        <p>Declan Mckenna</p>
+      </div>
+      <div class = "album country"> 
+        <img src="images/JohnnyCashAtFolsomPrison.jpg" alt="At Folsom Prison by Johnny Cash album cover art">
+        <h2>At Folsom Prison</h2>
+        <p>Johnny Cash</p>
+      </div>
+      <div class = "album pop"> 
+        <img src="images/Adele21.jpg" alt="21 by Adele album cover art">
+        <h2>21</h2>
+        <p>Adele</p>
+      </div>
+      <div class = "album hiphop"> 
+        <img src="images/LaurynHillMiseducation.jpg" alt="Miseducation of Lauryn Hill by Lauryn Hill album cover art">
+        <h2>Miseducation of Lauryn Hill</h2>
+        <p>Lauryn Hill</p>
+      </div>
+      <div class = "album hiphop"> 
+        <img src="images/YeLateRegistration.jpg" alt="Late Registration by Kanye West album cover art">
+        <h2>Late Registration</h2>
+        <p>Kanye West</p>
+      </div>
+      <div class = "album alt"> 
+        <img src="images/TheStrokesTheNewAbnormal.png" alt="The New Abnormal by The Strokes album cover art">
+        <h2>The New Abnormal</h2>
+        <p>The Strokes</p>
+      </div>
+      <div class = "album pop"> 
+        <img src="images/Adele19.jpg" alt="19 by Adele album cover art">
+        <h2>19</h2>
+        <p>Adele</p>
+      </div>
+      <div class = "album alt"> 
+        <img src="images/LilYachtyLetsStart.jpg" alt="Let's Start Here by Lil Yachty album cover art">
+        <h2>Let's Start Here.</h2>
+        <p>Lil Yachty</p>
+      </div>
+      <div class = "album pop"> 
+        <img src="images/OliviaRodrigoSOUR.jpg" alt="SOUR by Olivia Rodrigo album cover art">
+        <h2>SOUR</h2>
+        <p>Olivia Rodrigo</p>
+      </div>
+      <div class = "album country"> 
+        <img src="images/OrvillePeckPony.jpg" alt="Pony by Orville Peck album cover art">
+        <h2>Pony</h2>
+        <p>Orville Peck</p>
+      </div>
+      <div class = "album pop"> 
+        <img src="images/BrunoMarsUnorthodox.jpg" alt="Unorthodox Jukebox by Bruno Mars album cover art">
+        <h2>Unorthodox Jukebox</h2>
+        <p>Bruno Mars</p>
+      </div>
+    </div>
+    <p class = "summary">Hi, I'm Elena! Welcome to my website for music. If you like my favorite albums, are interested in seeing more album reviews from someone who knows nothing about music, or want to discover something new, you may like my Spotify and/or my Instagram @elenasalbumreviews! Feel free to send me a DM if you have any comments! Thanks for viewing &#x1F601 </p>
+    <!-- <div class = "socials">
+      <a href="https://www.instagram.com/elenasalbumreviews/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram" target = "_blank"></a>
+      <a href="https://open.spotify.com/user/candyfan098?si=42bc01c1be6c4606" class="fa fa-spotify" target = "_blank"></a>
+    </div> -->
+
+    <script>
+     document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const albums = document.querySelectorAll('.album');
+
+    function filterAlbums(filter) {
+      albums.forEach(album => {
+        album.style.display = 'none';
+      });
+
+      if (filter === 'all') {
+        albums.forEach(album => {
+          album.style.display = 'block';
+        });
+      } else {
+        const filteredAlbums = document.querySelectorAll(filter);
+        filteredAlbums.forEach(album => {
+          album.style.display = 'block';
+        });
+      }
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function () {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+        const filter = this.getAttribute('data-filter');
+        filterAlbums(filter);
+      });
+    });
+
+    // Simulate a click on the "All" filter button by default
+    document.querySelector('.filter-btn[data-filter="all"]').click();
+  });
+    </script>
+</body>
+</html>
